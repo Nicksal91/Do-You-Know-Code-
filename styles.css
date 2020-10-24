@@ -37,3 +37,50 @@ body.wrong {
     padding: 20px;
     box-shadow: 0 0 10px 5px;
 }
+
+.btn-grid {
+    display: grid;
+    gap: 15px;
+    margin: 25px 0;
+    padding: 10px;
+}
+
+.btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 45%);
+    background-color: hsl(var(--hue), 100%, 85%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    outline: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    border-color: black;
+}
+
+.btn.correct {
+    --hue: var(--hue-correct);
+}
+
+.btn.wrong {
+    --hue: var(--hue-wrong);
+}
+
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.hide  {
+    display: none;
+}
